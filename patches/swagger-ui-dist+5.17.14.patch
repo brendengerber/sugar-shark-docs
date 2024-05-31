@@ -1,0 +1,83 @@
+diff --git a/node_modules/swagger-ui-dist/LICENSE b/node_modules/swagger-ui-dist/LICENSE
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/NOTICE b/node_modules/swagger-ui-dist/NOTICE
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/README.md b/node_modules/swagger-ui-dist/README.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/absolute-path.js b/node_modules/swagger-ui-dist/absolute-path.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/favicon-16x16.png b/node_modules/swagger-ui-dist/favicon-16x16.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/favicon-32x32.png b/node_modules/swagger-ui-dist/favicon-32x32.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/index.css b/node_modules/swagger-ui-dist/index.css
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/index.html b/node_modules/swagger-ui-dist/index.html
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/index.js b/node_modules/swagger-ui-dist/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/oauth2-redirect.html b/node_modules/swagger-ui-dist/oauth2-redirect.html
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-initializer.js b/node_modules/swagger-ui-dist/swagger-initializer.js
+old mode 100644
+new mode 100755
+index 8ea0ea3..c4f3e6c
+--- a/node_modules/swagger-ui-dist/swagger-initializer.js
++++ b/node_modules/swagger-ui-dist/swagger-initializer.js
+@@ -1,6 +1,9 @@
+-window.onload = function() {
++window.onload = async function() {
+   //<editor-fold desc="Changeable Configuration Block">
+ 
++  //Allows browser to send cookie, ensure that you are logged in first already and it will happen automatically
++  await fetch('https://api.sugarshark.app/user', { credentials: 'include' })
++  
+   // the following lines will be replaced by docker/configurator, when it runs in a docker-container
+   window.ui = SwaggerUIBundle({
+     url: "https://petstore.swagger.io/v2/swagger.json",
+diff --git a/node_modules/swagger-ui-dist/swagger-ui-bundle.js b/node_modules/swagger-ui-dist/swagger-ui-bundle.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui-bundle.js.map b/node_modules/swagger-ui-dist/swagger-ui-bundle.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui-es-bundle-core.js b/node_modules/swagger-ui-dist/swagger-ui-es-bundle-core.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui-es-bundle-core.js.map b/node_modules/swagger-ui-dist/swagger-ui-es-bundle-core.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui-es-bundle.js b/node_modules/swagger-ui-dist/swagger-ui-es-bundle.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui-es-bundle.js.map b/node_modules/swagger-ui-dist/swagger-ui-es-bundle.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js b/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js.map b/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui.css b/node_modules/swagger-ui-dist/swagger-ui.css
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui.css.map b/node_modules/swagger-ui-dist/swagger-ui.css.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui.js b/node_modules/swagger-ui-dist/swagger-ui.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/swagger-ui-dist/swagger-ui.js.map b/node_modules/swagger-ui-dist/swagger-ui.js.map
+old mode 100644
+new mode 100755
